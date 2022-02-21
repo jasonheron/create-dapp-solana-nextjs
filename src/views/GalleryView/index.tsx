@@ -37,27 +37,22 @@ export const GalleryView: FC = ({}) => {
   };
 
   return (
+    
     <div className="container mx-auto max-w-6xl p-8 2xl:px-0">
       <div className={styles.container}>
-        <div className="navbar mb-2 shadow-lg bg-neutral text-neutral-content rounded-box">
-          <div className="flex-none">
-            <button className="btn btn-square btn-ghost">
-              <span className="text-4xl">👀</span>
-            </button>
-          </div>
+        <div className="navbar bg-neutral text-neutral-content shadow-xl rounded-box">
+          
           <div className="flex-1 px-2 mx-2">
-            <div className="text-sm breadcrumbs">
-              <ul className="text-xl">
-                <li>
+            
+              
+                
                   <Link href="https://twitter.com/nifty_sol">
-                    <a>NiFTy</a>
+                    <a class="btn btn-ghost normal-case text-xl"><p><b>NiFTy's</b> Solana NFT Lookup</p></a>
                   </Link>
-                </li>
-                <li>
-                  Solana NFT Lookup
-                </li>
-              </ul>
-            </div>
+                
+                  
+                
+            
           </div>
           <div className="flex-none">
             <WalletMultiButton className="btn btn-ghost" />
@@ -79,8 +74,6 @@ export const GalleryView: FC = ({}) => {
                   </p>
                   <div>
                     <div className="form-control mt-8">
-                      <label className="input-group input-group-vertical input-group-lg">
-                        <span>Search</span>
                         <div className="flex space-x-2">
                           <input
                             type="text"
@@ -90,7 +83,7 @@ export const GalleryView: FC = ({}) => {
                             onChange={onChange}
                             style={{
                               borderRadius:
-                                "0 0 var(--rounded-btn,.5rem) var(--rounded-btn,.5rem)",
+                                "var(--rounded-btn,.5rem)",
                             }}
                           />
 
@@ -98,7 +91,6 @@ export const GalleryView: FC = ({}) => {
                             onUseWalletClick={onUseWalletClick}
                           />
                         </div>
-                      </label>
                     </div>
                   </div>
                 </div>
@@ -146,7 +138,7 @@ const NftList = ({ nfts, error }: NftListProps) => {
   }
 
   return (
-    <div className="grid grid-cols-2 md:grid-cols-4 gap-4 items-start">
+    <div className="grid grid-cols-3 md:grid-cols-3 gap-5 items-start">
       {nfts?.map((nft) => (
         <NftCard key={nft.mint} details={nft} onSelect={() => {}} />
       ))}

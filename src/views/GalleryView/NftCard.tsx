@@ -40,8 +40,8 @@ export const NftCard: FC<Props> = ({
   const { image } = data ?? {};
 
   return (
-    <div className={`card bordered max-w-xs compact rounded-md`}>
-      <figure className="min-h-16 animation-pulse-color">
+    <div className={`card bg-base-100 shadow-xl`}>
+      <figure className="min-h-10 animation-pulse-color">
         {!fallbackImage || !error ? (
           <img
             src={image}
@@ -57,7 +57,7 @@ export const NftCard: FC<Props> = ({
         )}
       </figure>
       <div className="card-body">
-        <h2 className="card-title text-sm text-left">{name}</h2>
+        <h2 className="card-title text-left">{name}</h2>
       </div>
     </div>
   );

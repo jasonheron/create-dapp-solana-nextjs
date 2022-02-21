@@ -1,13 +1,15 @@
 // default settings can be found here
 // https://unpkg.com/browse/tailwindcss@2.2.17/stubs/defaultConfig.stub.js
 
+
+
 module.exports = {
   mode: "jit",
   purge: ["./src/**/*.{js,jsx,ts,tsx}"],
   darkMode: "media", // or 'false' or 'class'
   theme: {
     fontFamily: {
-      // sans: ['Graphik', 'sans-serif'],
+      sans: ['Montserrat', 'sans-serif'],
       // serif: ['Merriweather', 'serif'],
     },
     extend: {
@@ -23,12 +25,12 @@ module.exports = {
   variants: {
     extend: {},
   },
-  plugins: [require("@tailwindcss/typography"), require("daisyui")],
+  plugins: [require("@tailwindcss/typography"), require("daisyui"), require('@tailwindcss/forms')],
   daisyui: {
     styled: true,
     themes: [
       // first one will be the default theme
-      "dark",
+      "bumblebee",
       // uncomment to enable
       // "light (default)",
       // "dark",
