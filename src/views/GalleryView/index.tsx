@@ -47,7 +47,7 @@ export const GalleryView: FC = ({}) => {
               
                 
                   <Link href="https://twitter.com/nifty_sol">
-                    <a class="btn btn-ghost normal-case text-xl"><p><b>NiFTy's</b> Solana NFT Lookup</p></a>
+                    <a className="btn btn-ghost normal-case text-xl"><p><b>NiFTy's</b> Solana NFT Lookup</p></a>
                   </Link>
                 
                   
