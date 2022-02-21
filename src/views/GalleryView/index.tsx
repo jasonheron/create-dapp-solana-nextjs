@@ -43,15 +43,12 @@ export const GalleryView: FC = ({}) => {
         <div className="navbar bg-neutral text-neutral-content shadow-xl rounded-box">
           
           <div className="flex-1 px-2 mx-2">
-            
-              
+
                 
                   <Link href="https://twitter.com/nifty_sol">
                     <a className="btn btn-ghost normal-case text-xl"><p><b>NiFTy's</b> Solana NFT Lookup</p></a>
                   </Link>
-                
-                  
-                
+
             
           </div>
           <div className="flex-none">
